@@ -45,27 +45,34 @@ AI-generated speech is becoming increasingly realistic, creating risks in securi
 
 ## Repository Structure
 deepfake-speech-detection-lcnn/
+│
 ├── implementations/
-│ ├── STFT/
-│ ├── Mel_spectrogram/
-│ ├── DWT/
-│ │ ├── Raw_data/
-│ │ └── Mel_spectrogram/
-│ └── WPT/
+│   ├── STFT/
+│   ├── Mel_spectrogram/
+│   ├── DWT/
+│   │   ├── Raw_data/
+│   │   └── Mel_spectrogram/
+│   └── WPT/
+│
 ├── src/
-│ ├── models/
-│ │ ├── lcnn.py
-│ │ └── layers.py
-│ └── metrics.py
+│   ├── models/
+│   │   ├── lcnn.py
+│   │   └── layers.py
+│   └── metrics.py
+│
 ├── notebooks/
-│ └── deepfake_demo.ipynb
+│   └── deepfake_demo.ipynb
+│
 ├── docs/
-│ ├── block_diagram.png
-│ └── lcnn_architecture.png
+│   ├── block_diagram.png
+│   └── lcnn_architecture.png
+│
 ├── data/
-│ └── dummy_samples/
+│   └── dummy_samples/
+│
 ├── requirements.txt
 └── README.md
+
 
 ## Dataset
 This project uses the official ASVspoof2019-LA dataset:
