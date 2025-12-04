@@ -44,34 +44,31 @@ AI-generated speech is becoming increasingly realistic, creating risks in securi
 
 
 ## Repository Structure
+```
 deepfake-speech-detection-lcnn/
-│
-├── implementations/
+│── implementations/
 │   ├── STFT/
 │   ├── Mel_spectrogram/
 │   ├── DWT/
 │   │   ├── Raw_data/
 │   │   └── Mel_spectrogram/
 │   └── WPT/
-│
-├── src/
+│── src/
 │   ├── models/
 │   │   ├── lcnn.py
 │   │   └── layers.py
 │   └── metrics.py
-│
-├── notebooks/
+│── notebooks/
 │   └── deepfake_demo.ipynb
-│
-├── docs/
+│── docs/
 │   ├── block_diagram.png
 │   └── lcnn_architecture.png
-│
-├── data/
+│── data/
 │   └── dummy_samples/
-│
-├── requirements.txt
+│── requirements.txt
 └── README.md
+```
+
 
 
 ## Dataset
