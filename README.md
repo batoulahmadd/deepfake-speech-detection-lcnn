@@ -44,25 +44,45 @@ AI-generated speech is becoming increasingly realistic, creating risks in securi
 deepfake-speech-detection-lcnn/
 
 │── implementations/
+
 │   ├── STFT/
+
 │   ├── Mel_spectrogram/
+
 │   ├── DWT/
+
 │   │   ├── Raw_data/
+
 │   │   └── Mel_spectrogram/
+
 │   └── WPT/
+
 │── src/
+
 │   ├── models/
+
 │   │   ├── lcnn.py
+
 │   │   └── layers.py
+
 │   └── metrics.py
+
 │── notebooks/
+
 │   └── deepfake_demo.ipynb
+
 │── docs/
+
 │   ├── block_diagram.png
+
 │   └── lcnn_architecture.png
+
 │── data/
+
 │   └── dummy_samples/
+
 │── requirements.txt
+
 │── README.md
 
 
@@ -72,11 +92,14 @@ This project uses the official ASVspoof2019-LA dataset:
 🔗 https://datashare.ed.ac.uk/handle/10283/3336
 
 Due to licensing and size restrictions, the dataset is not included.
+
 A few short dummy audio samples are provided in `data/dummy_samples/`
+
 for demonstration purposes
 
 ## System Architecture
 The full processing pipeline consists of:
+
 1️⃣ Preprocessing → 2️⃣ Feature Extraction (STFT / Mel / DWT / WPT) → 3️⃣ LCNN Model → 4️⃣ Evaluation
 
 Block diagram available in `docs/block_diagram.png`
@@ -86,23 +109,29 @@ LCNN layer configuration available in `docs/lcnn_architecture.png`
 
 ## 🚀 How to Run
 1- Install dependencies:
+
   pip install -r requirements.txt
 
 2- Choose a feature extraction method:
+
 Example: run pipeline for DWT on raw audio
-  cd implementations/DWT/Raw_data/
-  python run_pipeline.py
+
+  - cd implementations/DWT/Raw_data/
+  - python run_pipeline.py
   
-- mathematica
+3- mathematica:
+
 This will:
-- Extract features
-- Save .npy files
-- Train LCNN
-- Evaluate model performance
+
+  - Extract features
+  - Save .npy files
+  - Train LCNN
+  - Evaluate model performance
 
 
 ## Publications & Reports
 Full Research Report (Arabic PDF) and presentation Slides:
+
 🔗 https://drive.google.com/file/d/1BcEi5XujzH0SQSV9J6WYLFmzKmcxARH-/view
 
 
