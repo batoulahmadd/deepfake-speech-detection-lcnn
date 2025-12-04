@@ -29,11 +29,11 @@ AI-generated speech is becoming increasingly realistic, creating risks in securi
 - Wavelets toolbox (PyWavelets)
 
 ## Key Results (Benchmarking on ASVspoof2019-LA)
--   Feature Type	          Wavelet	        Levels	    EER	       min t-DCF
-- DWT on Raw Audio	      Daubechies-4	      3	       8.89%	      0.0499
-- DWT on Raw Audio      	Daubechies-4       	1	       11.35%	      0.0489
-- Mel-Spectrogram	             –              –	       10.6%      	0.0500
--    STFT	                     –	            –      	 18.92%     	0.0503
+   Feature Type	          Wavelet	        Levels	    EER	       min t-DCF
+ DWT on Raw Audio	      Daubechies-4	      3	       8.89%	      0.0499
+ DWT on Raw Audio      	Daubechies-4       	1	       11.35%	      0.0489
+ Mel-Spectrogram	             –            –	       10.6%      	0.0500
+      STFT	                   –	          –      	 18.92%     	0.0503
 
 - Wavelet-based features significantly outperform baseline spectral methods.
 - Db-4 at level 3 = best accuracy
@@ -41,11 +41,16 @@ AI-generated speech is becoming increasingly realistic, creating risks in securi
 
 
 ## Repository Structure
-  deepfake-speech-detection-lcnn/
-  │── implementations/
-  │   ├── STFT/
-  │   ├── Mel_spectrogram/
+deepfake-speech-detection-lcnn/
+
+│── implementations/
+
+│   ├── STFT/
+
+│   ├── Mel_spectrogram/
+
 │   ├── DWT/
+
 │   │   ├── Raw_data/
 │   │   └── Mel_spectrogram/
 │   └── WPT/
