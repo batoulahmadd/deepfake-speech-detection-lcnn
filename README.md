@@ -28,16 +28,19 @@ AI-generated speech is becoming increasingly realistic, creating risks in securi
 - Scikit-learn
 - Wavelets toolbox (PyWavelets)
 
-## Key Results (Benchmarking on ASVspoof2019-LA)
-   Feature Type	          Wavelet	        Levels	    EER	       min t-DCF
- DWT on Raw Audio	      Daubechies-4	      3	       8.89%	      0.0499
- DWT on Raw Audio      	Daubechies-4       	1	       11.35%	      0.0489
- Mel-Spectrogram	             –            –	       10.6%      	0.0500
-      STFT	                   –	          –      	 18.92%     	0.0503
 
-- Wavelet-based features significantly outperform baseline spectral methods.
-- Db-4 at level 3 = best accuracy
-- Db-4 at level 1 = best sensitivity
+## Key Results (Benchmarking on ASVspoof2019-LA)
+
+| Feature Type        | Wavelet       | Levels | EER    | min t-DCF |
+|--------------------|--------------|--------|--------|-----------|
+| DWT (Raw Audio)    | Db-4         | 3      | 8.89%  | 0.0499    |
+| DWT (Raw Audio)    | Db-4         | 1      | 11.35% | 0.0489    |
+| Mel-Spectrogram    | –            | –      | 10.6%  | 0.0500    |
+| STFT               | –            | –      | 18.92% | 0.0503    |
+
+✔ Wavelet-based features significantly outperform baseline methods  
+✔ Db-4 @ level 3 → **best accuracy**  
+✔ Db-4 @ level 1 → **best sensitivity**
 
 
 ## Repository Structure
