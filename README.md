@@ -41,10 +41,10 @@ AI-generated speech is becoming increasingly realistic, creating risks in securi
 
 
 ## Repository Structure
-- deepfake-speech-detection-lcnn/
-- │── implementations/
-- │   ├── STFT/
-- │   ├── Mel_spectrogram/
+  deepfake-speech-detection-lcnn/
+  │── implementations/
+  │   ├── STFT/
+  │   ├── Mel_spectrogram/
 │   ├── DWT/
 │   │   ├── Raw_data/
 │   │   └── Mel_spectrogram/
