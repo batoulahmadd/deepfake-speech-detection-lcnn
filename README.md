@@ -44,13 +44,9 @@ AI-generated speech is becoming increasingly realistic, creating risks in securi
 deepfake-speech-detection-lcnn/
 
 │── implementations/
-
 │   ├── STFT/
-
 │   ├── Mel_spectrogram/
-
 │   ├── DWT/
-
 │   │   ├── Raw_data/
 │   │   └── Mel_spectrogram/
 │   └── WPT/
@@ -82,7 +78,9 @@ for demonstration purposes
 ## System Architecture
 The full processing pipeline consists of:
 1️⃣ Preprocessing → 2️⃣ Feature Extraction (STFT / Mel / DWT / WPT) → 3️⃣ LCNN Model → 4️⃣ Evaluation
+
 Block diagram available in `docs/block_diagram.png`
+
 LCNN layer configuration available in `docs/lcnn_architecture.png`
 
 
@@ -97,10 +95,10 @@ Example: run pipeline for DWT on raw audio
   
 - mathematica
 This will:
-✔ Extract features
-✔ Save .npy files
-✔ Train LCNN
-✔ Evaluate model performance
+- Extract features
+- Save .npy files
+- Train LCNN
+- Evaluate model performance
 
 
 ## Publications & Reports
